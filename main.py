@@ -21,17 +21,17 @@ def main() -> None:
 
     painting = download_painting('MetObjects.csv')
 
-    # image = jpg_to_array(f'paintings/painting_{painting['object_id']}.jpg')
+    image = jpg_to_array(f'paintings/painting_{painting['object_id']}.jpg')
 
-    image = jpg_to_array('paintings/painting_45366.jpg')
+    # image = jpg_to_array('paintings/painting_45366.jpg')
 
     measure_time_and_save(cip.rgb_to_grayscale, image, 'my_rgb_to_grayscale.jpg')
     measure_time_and_save(ip.rgb_to_grayscale, image, 'rgb_to_grayscale.jpg')
 
     measure_time_and_save(cip.convolution, image, 'my_convolution.jpg',
-                           config.SHARPNESS)
+                          config.SHARPNESS)
     measure_time_and_save(ip.convolution, image, 'convolution.jpg',
-                           config.SHARPNESS)
+                          config.SHARPNESS)
 
     measure_time_and_save(cip.gaussian_blur, image, 'my_gaussian_blur.jpg')
     measure_time_and_save(ip.gaussian_blur, image, 'gaussian_blur.jpg')

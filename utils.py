@@ -24,19 +24,15 @@ def jpg_to_array(image_path: str) -> Optional[NDArray[np.uint8]]:
     Returns:
         Optional[NDArray[np.uint8]]: Массив изображения или None в случае ошибки
     """
-    # Проверка существования файла
     if not os.path.exists(image_path):
         print(f"Ошибка: Файл {image_path} не найден")
         return None
 
-    # Проверка расширения файла
     if not image_path.lower().endswith(('.jpg', '.jpeg', '.jpe')):
         print(f"Предупреждение: Файл {image_path} может не быть JPG")
 
-    # Загрузка изображения
     img = cv2.imread(image_path)
 
-    # Проверка успешности загрузки
     if img is None:
         print(f"Ошибка: Не удалось загрузить изображение {image_path}")
         return None
@@ -89,23 +85,18 @@ def measure_time_and_save(
         Tuple[Optional[NDArray[np.uint8]], float]: Кортеж (результат обработки,
                                                    время выполнения в секундах)
     """
-    # Засекаем время начала
     start_time = time.time()
 
-    # Выполняем функцию обработки
     result = processing_func(image, *args)
 
-    # Засекаем время окончания
     end_time = time.time()
     execution_time = end_time - start_time
 
-    # Сохраняем результат
     if result is not None:
         save_array_to_jpg(result, output_filename)
     else:
         print("Ошибка: Функция обработки вернула None")
 
-    # Выводим информацию
     func_name = processing_func.__name__
     print(
         f"Функция '{func_name}': {execution_time:.4f} сек | "

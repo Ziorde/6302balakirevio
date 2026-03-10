@@ -194,35 +194,28 @@ def download_painting(csv_filename: str) -> Optional[Dict[str, Union[str, int]]]
         Optional[Dict[str, Union[str, int]]]: Словарь с информацией о загруженной картине
                                             или None в случае ошибки
     """
-    # Создаем директории
     download_path = setup_directories()
 
-    # Читаем данные из CSV
     paintings = read_paintings_from_csv(csv_filename)
     if paintings is None or not paintings:
         return None
 
-    # Выбираем случайную картину
     random_painting = select_random_painting(paintings)
     if random_painting is None:
         return None
 
-    # Получаем данные из API
     object_data = fetch_object_data(random_painting['object_id'])
     if object_data is None:
         return None
 
-    # Получаем URL изображения
     image_url = get_image_url(object_data)
     if not image_url:
         return None
 
-    # Скачиваем изображение
     img_path = download_image(image_url, download_path, random_painting['object_id'])
     if img_path is None:
         return None
 
-    # Сохраняем метаданные
     json_path = save_metadata(object_data, download_path, random_painting['object_id'])
     if json_path is None:
         return None

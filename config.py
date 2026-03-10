@@ -23,7 +23,7 @@ GRAYSCALE_WEIGHTS = {
 # Настройки обработки
 GAUSSIAN_KERNEL_SIZE = 5
 GAUSSIAN_SIGMA = 1.0
-GAMMA_VALUE = 0.05
+GAMMA_VALUE = 0.5
 
 # Ядра для свертки
 SOBEL_X = np.array([[-1, 0, 1],
