@@ -1,0 +1,94 @@
+{
+  "objectID": 45366,
+  "isHighlight": false,
+  "accessionNumber": "1975.268.33",
+  "accessionYear": "1975",
+  "isPublicDomain": true,
+  "primaryImage": "https://images.metmuseum.org/CRDImages/as/original/DP237171_CRD.jpg",
+  "primaryImageSmall": "https://images.metmuseum.org/CRDImages/as/web-large/DP237171_CRD.jpg",
+  "additionalImages": [
+    "https://images.metmuseum.org/CRDImages/as/original/DP237163.jpg",
+    "https://images.metmuseum.org/CRDImages/as/original/DP238010.jpg",
+    "https://images.metmuseum.org/CRDImages/as/original/DP237168.jpg",
+    "https://images.metmuseum.org/CRDImages/as/original/DP237169.jpg",
+    "https://images.metmuseum.org/CRDImages/as/original/DP237170.jpg",
+    "https://images.metmuseum.org/CRDImages/as/original/DP237171.jpg",
+    "https://images.metmuseum.org/CRDImages/as/original/DP237172.jpg",
+    "https://images.metmuseum.org/CRDImages/as/original/DP237173.jpg",
+    "https://images.metmuseum.org/CRDImages/as/original/LC-1975_268_33_001.jpg"
+  ],
+  "constituents": null,
+  "department": "Asian Art",
+  "objectName": "Handscroll",
+  "title": "“Channel Markers” (Miotsukushi)",
+  "culture": "Japan",
+  "period": "Nanbokuchō (1336–92) or Muromachi (1392–1573) period,",
+  "dynasty": "",
+  "reign": "",
+  "portfolio": "",
+  "artistRole": "",
+  "artistPrefix": "",
+  "artistDisplayName": "",
+  "artistDisplayBio": "",
+  "artistSuffix": "",
+  "artistAlphaSort": "",
+  "artistNationality": "",
+  "artistBeginDate": "",
+  "artistEndDate": "",
+  "artistGender": "",
+  "artistWikidata_URL": "",
+  "artistULAN_URL": "",
+  "objectDate": "late 14th–early 15th century",
+  "objectBeginDate": 1367,
+  "objectEndDate": 1433,
+  "medium": "Handscroll; ink and color on paper",
+  "dimensions": "Image: 12 3/16 in. x 14 ft. 8 in. (31 x 447 cm)",
+  "measurements": [
+    {
+      "elementName": "Image",
+      "elementDescription": null,
+      "elementMeasurements": {
+        "Height": 30.956312,
+        "Width": 447.0409
+      }
+    }
+  ],
+  "creditLine": "The Harry G. C. Packard Collection of Asian Art, Gift of Harry G. C. Packard, and Purchase, Fletcher, Rogers, Harris Brisbane Dick, and Louis V. Bell Funds, Joseph Pulitzer Bequest, and The Annenberg Fund Inc. Gift, 1975",
+  "geographyType": "",
+  "city": "",
+  "state": "",
+  "county": "",
+  "country": "",
+  "region": "",
+  "subregion": "",
+  "locale": "",
+  "locus": "",
+  "excavation": "",
+  "river": "",
+  "classification": "Paintings",
+  "rightsAndReproduction": "",
+  "linkResource": "",
+  "metadataDate": "2026-02-10T04:57:34.873Z",
+  "repository": "Metropolitan Museum of Art, New York, NY",
+  "objectURL": "https://www.metmuseum.org/art/collection/search/45366",
+  "tags": [
+    {
+      "term": "Men",
+      "AAT_URL": "http://vocab.getty.edu/page/aat/300025928",
+      "Wikidata_URL": "https://www.wikidata.org/wiki/Q8441"
+    },
+    {
+      "term": "Horses",
+      "AAT_URL": "http://vocab.getty.edu/page/aat/300250148",
+      "Wikidata_URL": "https://www.wikidata.org/wiki/Q726"
+    },
+    {
+      "term": "Carriages",
+      "AAT_URL": "http://vocab.getty.edu/page/aat/300185335",
+      "Wikidata_URL": "https://www.wikidata.org/wiki/Q235356"
+    }
+  ],
+  "objectWikidata_URL": "https://www.wikidata.org/wiki/Q78848461",
+  "isTimelineWork": true,
+  "GalleryNumber": ""
+}

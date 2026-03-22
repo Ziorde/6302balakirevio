@@ -221,3 +221,5 @@ __marimo__/
 
 # Config files
 .flake8
+
+*.csv
