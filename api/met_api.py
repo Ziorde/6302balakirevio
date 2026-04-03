@@ -8,8 +8,6 @@ import os
 import random
 from typing import Any, Dict, List, Optional, Union
 
-import config
-
 import requests
 
 
@@ -20,7 +18,7 @@ def setup_directories() -> str:
     Returns:
         str: Путь к созданной директории
     """
-    download_path = os.path.join(config.PAINTINGS_DIR)
+    download_path = os.path.join('data\paintings')
     os.makedirs(download_path, exist_ok=True)
     print(f"Создана директория для загрузок: {download_path}")
     return download_path
@@ -60,7 +58,7 @@ def read_paintings_from_csv(csv_filename: str) -> Optional[List[Dict[str, str]]]
     return paintings
 
 
-def select_random_painting(paintings: List[Dict[str, str]]) -> Optional[Dict[str, str]]:
+def select_random_painting(paintings: List[Dict[str, str]], used_ids: set = None) -> Optional[Dict[str, str]]:
     """
     Выбирает случайную картину из списка
 
@@ -71,11 +69,16 @@ def select_random_painting(paintings: List[Dict[str, str]]) -> Optional[Dict[str
         Optional[Dict[str, str]]: Словарь с данными случайной картины
                                  или None в случае ошибки
     """
-    if not paintings:
-        print("Ошибка: Не найдено картин в коллекции!")
+    if used_ids is None:
+        used_ids = set()
+
+    available_paintings = [p for p in paintings if p['object_id'] not in used_ids]
+
+    if not available_paintings:
+        print("Ошибка: Больше нет доступных картин для выбора!")
         return None
 
-    random_painting = random.choice(paintings)
+    random_painting = random.choice(available_paintings)
     print("\nВыбрана случайная картина:")
     print(f"  Object ID: {random_painting['object_id']}")
     print(f"  Название: {random_painting['title']}")
@@ -117,7 +120,7 @@ def get_image_url(object_data: Dict[str, Any]) -> Optional[str]:
     Returns:
         Optional[str]: URL изображения или None, если изображение отсутствует
     """
-    image_url = object_data.get('primaryImage')
+    image_url = object_data.get('primaryImageSmall')
     if not image_url:
         print("Ошибка: У выбранного объекта нет изображения!")
 
@@ -183,7 +186,7 @@ def save_metadata(
         return None
 
 
-def download_painting(csv_filename: str) -> Optional[Dict[str, Union[str, int]]]:
+def download_painting(csv_filename: str, max_attempts: int = 10) -> Optional[Dict[str, Union[str, int]]]:
     """
     Основная функция для загрузки данных о картине
 
@@ -200,29 +203,38 @@ def download_painting(csv_filename: str) -> Optional[Dict[str, Union[str, int]]]
     if paintings is None or not paintings:
         return None
 
-    random_painting = select_random_painting(paintings)
-    if random_painting is None:
-        return None
+    used_ids = set()
+    for attempt in range(1, max_attempts):
 
-    object_data = fetch_object_data(random_painting['object_id'])
-    if object_data is None:
-        return None
+        random_painting = select_random_painting(paintings, used_ids)
+        if random_painting is None:
+            print("Больше нет доступных картин!")
+            return None
 
-    image_url = get_image_url(object_data)
-    if not image_url:
-        return None
+        used_ids.add(random_painting['object_id'])
 
-    img_path = download_image(image_url, download_path, random_painting['object_id'])
-    if img_path is None:
-        return None
+        object_data = fetch_object_data(random_painting['object_id'])
+        if object_data is None:
+            print(f"Не удалось получить данные для объекта {random_painting['object_id']}")
+            continue
 
-    json_path = save_metadata(object_data, download_path, random_painting['object_id'])
-    if json_path is None:
-        return None
+        image_url = get_image_url(object_data)
+        if not image_url:
+            print(f"У объекта {random_painting['object_id']} нет изображения")
+            continue
 
-    return {
-        'img_path': img_path,
-        'json_path': json_path,
-        'object_id': random_painting['object_id'],
-        'title': random_painting['title'],
-    }
+        img_path = download_image(image_url, download_path, random_painting['object_id'])
+        if img_path is None:
+            print(f"Не удалось скачать изображение для объекта {random_painting['object_id']}")
+            continue
+
+        json_path = save_metadata(object_data, download_path, random_painting['object_id'])
+
+        return {
+            'img_path': img_path,
+            'json_path': json_path,
+            'object_id': random_painting['object_id'],
+            'title': random_painting['title'],
+        }
+
+    return None
