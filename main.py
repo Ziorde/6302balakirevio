@@ -1,49 +1,51 @@
 """
-Файл точка входа
+Главный файл для демонстрации работы ООП версии лабораторной работы
 """
 
-import config
+from processors.image_processor import ImageProcessor
 
-import custom_image_processing as cip
 
-import image_processing as ip
+def polymorphism(processor: ImageProcessor) -> None:
+    """
+    Демонстрация полиморфизма - обработка одного изображения
+    разными способами (цветное и ч/б)
 
-from met_api import download_painting
+    Args:
+        processor: Процессор с загруженным цветным изображением
+    """
+    grayscale_artwork = processor.convert_to_grayscale_artwork()
 
-from utils import jpg_to_array, measure_time_and_save
+    if grayscale_artwork is None:
+        return
+
+    gs_processor = ImageProcessor()
+    gs_processor._artwork = grayscale_artwork
+
+    print("\nОбработка цветного изображения")
+    color_sobel = processor.process_gaussian_blur(save=True)
+    print("\nОбработка чёрно-белого изображения")
+    gray_sobel = gs_processor.process_gaussian_blur(save=True)
 
 
 def main() -> None:
     """
-    Основная функция для обработки командной строки и выполнения обработки
-    изображений.
+    Основная функция для демонстрации работы
     """
+    processor = ImageProcessor()
 
-    painting = download_painting('MetObjects.csv')
+    success = processor.load_from_met('MetObjects.csv')
 
-    image = jpg_to_array(f'paintings/painting_{painting['object_id']}.jpg')
+    processor.show_info()
 
-    # image = jpg_to_array('paintings/painting_45366.jpg')
+    processor.process_all()
 
-    measure_time_and_save(cip.rgb_to_grayscale, image, 'my_rgb_to_grayscale.jpg')
-    measure_time_and_save(ip.rgb_to_grayscale, image, 'rgb_to_grayscale.jpg')
+    polymorphism(processor)
 
-    measure_time_and_save(cip.convolution, image, 'my_convolution.jpg',
-                          config.SHARPNESS)
-    measure_time_and_save(ip.convolution, image, 'convolution.jpg',
-                          config.SHARPNESS)
+    processor2 = ImageProcessor()
+    processor2.load_from_met('MetObjects.csv')
 
-    measure_time_and_save(cip.gaussian_blur, image, 'my_gaussian_blur.jpg')
-    measure_time_and_save(ip.gaussian_blur, image, 'gaussian_blur.jpg')
+    processor2.combine_with(processor, save=True)
 
-    measure_time_and_save(cip.sobel_edge_detection, image, 'my_sobel_edge_detection.jpg')
-    measure_time_and_save(ip.sobel_edge_detection, image, 'sobel_edge_detection.jpg')
-
-    measure_time_and_save(cip.gamma_correction, image, 'my_gamma_correction.jpg')
-    measure_time_and_save(ip.gamma_correction, image, 'gamma_correction.jpg')
-
-    measure_time_and_save(cip.histogram_equalization, image, 'my_lab_equalization.jpg')
-    measure_time_and_save(ip.histogram_equalization, image, 'lab_equalization.jpg')
 
 
 if __name__ == "__main__":
