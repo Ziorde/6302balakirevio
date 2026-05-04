@@ -44,9 +44,7 @@ class Artwork(ABC):
 
     def __str__(self) -> str:
         """Перегрузка метода преобразования в строку"""
-        return (f"{self._metadata}\n"
-                f"Размеры изображения: {self.shape}\n"
-                f"Обработанные версии: {list(self._processed_images.keys())}")
+        return f"{self._metadata}\nРазмеры: {self.shape}"
 
     def __add__(self, other: 'Artwork') -> NDArray[np.uint8]:
         """
