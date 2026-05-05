@@ -12,7 +12,7 @@ from models.artwork import Artwork
 from models.metadata import Metadata
 from models.color_artwork import ColorArtwork
 from models.grayscale_artwork import GrayscaleArtwork
-from decorators.timer_decorator import timer_decorator
+from parallel.utils import timer_decorator
 
 
 class ImageProcessor:
