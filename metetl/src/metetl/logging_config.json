@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "disable_existing_loggers": false,
+  "formatters": {
+    "file_formatter": {
+      "format": "%(asctime)s - %(name)s - %(levelname)s - %(filename)s:%(lineno)d - %(message)s",
+      "datefmt": "%Y-%m-%d %H:%M:%S"
+    },
+    "console_formatter": {
+      "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+      "datefmt": "%H:%M:%S"
+    }
+  },
+  "handlers": {
+    "file_handler": {
+      "class": "logging.FileHandler",
+      "level": "DEBUG",
+      "formatter": "file_formatter",
+      "filename": "logs/metetl.log",
+      "encoding": "utf-8",
+      "mode": "a"
+    },
+    "console_handler": {
+      "class": "logging.StreamHandler",
+      "level": "INFO",
+      "formatter": "console_formatter",
+      "stream": "ext://sys.stdout"
+    }
+  },
+  "loggers": {
+    "metetl": {
+      "level": "DEBUG",
+      "handlers": ["file_handler", "console_handler"],
+      "propagate": false
+    },
+    "aiohttp": {
+      "level": "WARNING",
+      "handlers": ["file_handler"],
+      "propagate": false
+    },
+    "matplotlib": {
+      "level": "WARNING",
+      "handlers": ["file_handler"],
+      "propagate": false
+    },
+    "PIL": {
+      "level": "WARNING",
+      "handlers": ["file_handler"],
+      "propagate": false
+    }
+  }
+}
