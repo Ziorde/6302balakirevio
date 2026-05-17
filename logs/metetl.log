@@ -1,0 +1,635 @@
+2026-05-06 16:33:22 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:33:22 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:33:22 - metetl.cli - INFO - cli.py:293 - ============================================================
+2026-05-06 16:33:22 - metetl.cli - INFO - cli.py:294 - Metropolitan Museum of Art ETL Pipeline
+2026-05-06 16:33:22 - metetl.cli - INFO - cli.py:295 - ============================================================
+2026-05-06 16:33:22 - metetl.cli - INFO - cli.py:298 - Выполнение команды: prepare
+2026-05-06 16:33:22 - metetl.cli - ERROR - cli.py:30 - CSV файл не найден: data\MetObjects.csv
+2026-05-06 16:33:43 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:33:43 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:33:43 - metetl.cli - INFO - cli.py:293 - ============================================================
+2026-05-06 16:33:43 - metetl.cli - INFO - cli.py:294 - Metropolitan Museum of Art ETL Pipeline
+2026-05-06 16:33:43 - metetl.cli - INFO - cli.py:295 - ============================================================
+2026-05-06 16:33:43 - metetl.cli - INFO - cli.py:298 - Выполнение команды: prepare
+2026-05-06 16:33:43 - metetl.cli - INFO - cli.py:33 - Чтение CSV файла: data\MetObjects.csv
+2026-05-06 16:33:50 - metetl.cli - INFO - cli.py:53 - Метаданные сохранены в data\to_download.json. Найдено 9005 картин.
+2026-05-06 16:33:59 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:33:59 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:33:59 - metetl.cli - INFO - cli.py:293 - ============================================================
+2026-05-06 16:33:59 - metetl.cli - INFO - cli.py:294 - Metropolitan Museum of Art ETL Pipeline
+2026-05-06 16:33:59 - metetl.cli - INFO - cli.py:295 - ============================================================
+2026-05-06 16:33:59 - metetl.cli - INFO - cli.py:301 - Выполнение команды: process
+2026-05-06 16:34:02 - metetl.cli - INFO - cli.py:80 - Запуск загрузки 5 изображений
+2026-05-06 16:34:02 - metetl.cli - INFO - cli.py:81 - Результаты будут сохранены в: images
+2026-05-06 16:34:02 - metetl.images.async_downloader - INFO - async_downloader.py:43 - AsyncImageDownloader инициализирован. CSV: data\MetObjects.csv, output: images, max_attempts: 10
+2026-05-06 16:34:02 - metetl.images.async_downloader - INFO - async_downloader.py:246 - Начинается загрузка 5 изображений
+2026-05-06 16:34:02 - metetl.images.async_downloader - DEBUG - async_downloader.py:53 - Чтение списка картин из CSV: data\MetObjects.csv
+2026-05-06 16:34:08 - metetl.images.async_downloader - INFO - async_downloader.py:66 - Найдено 9005 картин в CSV
+2026-05-06 16:34:08 - metetl.images.async_downloader - INFO - async_downloader.py:257 - Загрузка 5 изображений из 9005 доступных (максимум попыток на каждое: 10)
+2026-05-06 16:34:08 - metetl.images.async_downloader - INFO - async_downloader.py:147 - Загрузка изображения 1 началась (ID: 36135), попытка 1/10
+2026-05-06 16:34:08 - metetl.images.async_downloader - DEBUG - async_downloader.py:83 - Запрос к API для 36135, попытка 1/3
+2026-05-06 16:34:08 - metetl.images.async_downloader - INFO - async_downloader.py:147 - Загрузка изображения 2 началась (ID: 440329), попытка 1/10
+2026-05-06 16:34:08 - metetl.images.async_downloader - DEBUG - async_downloader.py:83 - Запрос к API для 440329, попытка 1/3
+2026-05-06 16:34:08 - metetl.images.async_downloader - INFO - async_downloader.py:147 - Загрузка изображения 3 началась (ID: 440375), попытка 1/10
+2026-05-06 16:34:08 - metetl.images.async_downloader - DEBUG - async_downloader.py:83 - Запрос к API для 440375, попытка 1/3
+2026-05-06 16:34:08 - metetl.images.async_downloader - INFO - async_downloader.py:147 - Загрузка изображения 4 началась (ID: 481950), попытка 1/10
+2026-05-06 16:34:08 - metetl.images.async_downloader - DEBUG - async_downloader.py:83 - Запрос к API для 481950, попытка 1/3
+2026-05-06 16:34:08 - metetl.images.async_downloader - INFO - async_downloader.py:147 - Загрузка изображения 5 началась (ID: 436890), попытка 1/10
+2026-05-06 16:34:08 - metetl.images.async_downloader - DEBUG - async_downloader.py:83 - Запрос к API для 436890, попытка 1/3
+2026-05-06 16:34:09 - metetl.images.async_downloader - DEBUG - async_downloader.py:87 - Успешный ответ API для 436890
+2026-05-06 16:34:09 - metetl.images.async_downloader - DEBUG - async_downloader.py:87 - Успешный ответ API для 440329
+2026-05-06 16:34:09 - metetl.images.async_downloader - WARNING - async_downloader.py:163 - Попытка 1 для изображения 2 провалена: нет URL изображения для ID 440329
+2026-05-06 16:34:09 - metetl.images.async_downloader - INFO - async_downloader.py:147 - Загрузка изображения 2 началась (ID: 488922), попытка 2/10
+2026-05-06 16:34:09 - metetl.images.async_downloader - DEBUG - async_downloader.py:83 - Запрос к API для 488922, попытка 1/3
+2026-05-06 16:34:09 - metetl.images.async_downloader - DEBUG - async_downloader.py:87 - Успешный ответ API для 36135
+2026-05-06 16:34:09 - metetl.images.async_downloader - DEBUG - async_downloader.py:87 - Успешный ответ API для 481950
+2026-05-06 16:34:09 - metetl.images.async_downloader - WARNING - async_downloader.py:163 - Попытка 1 для изображения 4 провалена: нет URL изображения для ID 481950
+2026-05-06 16:34:09 - metetl.images.async_downloader - INFO - async_downloader.py:147 - Загрузка изображения 4 началась (ID: 36162), попытка 2/10
+2026-05-06 16:34:09 - metetl.images.async_downloader - DEBUG - async_downloader.py:83 - Запрос к API для 36162, попытка 1/3
+2026-05-06 16:34:09 - metetl.images.async_downloader - DEBUG - async_downloader.py:87 - Успешный ответ API для 440375
+2026-05-06 16:34:09 - metetl.images.async_downloader - WARNING - async_downloader.py:163 - Попытка 1 для изображения 3 провалена: нет URL изображения для ID 440375
+2026-05-06 16:34:09 - metetl.images.async_downloader - INFO - async_downloader.py:147 - Загрузка изображения 3 началась (ID: 437674), попытка 2/10
+2026-05-06 16:34:09 - metetl.images.async_downloader - DEBUG - async_downloader.py:83 - Запрос к API для 437674, попытка 1/3
+2026-05-06 16:34:10 - metetl.images.async_downloader - DEBUG - async_downloader.py:87 - Успешный ответ API для 36162
+2026-05-06 16:34:10 - metetl.images.async_downloader - DEBUG - async_downloader.py:87 - Успешный ответ API для 488922
+2026-05-06 16:34:10 - metetl.images.async_downloader - WARNING - async_downloader.py:163 - Попытка 2 для изображения 2 провалена: нет URL изображения для ID 488922
+2026-05-06 16:34:10 - metetl.images.async_downloader - INFO - async_downloader.py:147 - Загрузка изображения 2 началась (ID: 816213), попытка 3/10
+2026-05-06 16:34:10 - metetl.images.async_downloader - DEBUG - async_downloader.py:83 - Запрос к API для 816213, попытка 1/3
+2026-05-06 16:34:10 - metetl.images.async_downloader - DEBUG - async_downloader.py:87 - Успешный ответ API для 437674
+2026-05-06 16:34:10 - metetl.images.async_downloader - DEBUG - async_downloader.py:87 - Успешный ответ API для 816213
+2026-05-06 16:34:10 - metetl.images.async_downloader - DEBUG - async_downloader.py:174 - Изображение 1 скачано: 64160 байт
+2026-05-06 16:34:10 - metetl.images.async_downloader - DEBUG - async_downloader.py:196 - Оригинал сохранен: images\1_36135_original.png
+2026-05-06 16:34:10 - metetl.images.async_downloader - INFO - async_downloader.py:221 - Загрузка изображения 1 завершена (ID: 36135) после 1 попыток
+2026-05-06 16:34:10 - metetl.images.async_downloader - DEBUG - async_downloader.py:174 - Изображение 4 скачано: 75200 байт
+2026-05-06 16:34:10 - metetl.images.async_downloader - DEBUG - async_downloader.py:174 - Изображение 5 скачано: 59529 байт
+2026-05-06 16:34:10 - metetl.images.async_downloader - DEBUG - async_downloader.py:196 - Оригинал сохранен: images\4_36162_original.png
+2026-05-06 16:34:10 - metetl.images.async_downloader - INFO - async_downloader.py:221 - Загрузка изображения 4 завершена (ID: 36162) после 2 попыток
+2026-05-06 16:34:10 - metetl.images.async_downloader - DEBUG - async_downloader.py:196 - Оригинал сохранен: images\5_436890_original.png
+2026-05-06 16:34:10 - metetl.images.async_downloader - INFO - async_downloader.py:221 - Загрузка изображения 5 завершена (ID: 436890) после 1 попыток
+2026-05-06 16:34:11 - metetl.images.async_downloader - DEBUG - async_downloader.py:174 - Изображение 2 скачано: 97872 байт
+2026-05-06 16:34:11 - metetl.images.async_downloader - DEBUG - async_downloader.py:196 - Оригинал сохранен: images\2_816213_original.png
+2026-05-06 16:34:11 - metetl.images.async_downloader - INFO - async_downloader.py:221 - Загрузка изображения 2 завершена (ID: 816213) после 3 попыток
+2026-05-06 16:34:11 - metetl.images.async_downloader - DEBUG - async_downloader.py:174 - Изображение 3 скачано: 244857 байт
+2026-05-06 16:34:11 - metetl.images.async_downloader - DEBUG - async_downloader.py:196 - Оригинал сохранен: images\3_437674_original.png
+2026-05-06 16:34:11 - metetl.images.async_downloader - INFO - async_downloader.py:221 - Загрузка изображения 3 завершена (ID: 437674) после 2 попыток
+2026-05-06 16:34:11 - metetl.images.async_downloader - INFO - async_downloader.py:274 - Успешно загружено 5 из 5 изображений
+2026-05-06 16:34:11 - metetl.cli - INFO - cli.py:91 - Загружено изображений: 5
+2026-05-06 16:34:11 - metetl.images.parallel_processor - INFO - parallel_processor.py:35 - ParallelImageProcessor инициализирован. Output: images, workers: 4
+2026-05-06 16:34:11 - metetl.images.parallel_processor - INFO - parallel_processor.py:120 - Начинается параллельная обработка 5 изображений
+2026-05-06 16:34:11 - metetl.images.parallel_processor - INFO - parallel_processor.py:121 - Используемый метод обработки: gamma_correction
+2026-05-06 16:34:11 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:34:11 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:34:11 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:34:11 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:34:12 - metetl.images.models - DEBUG - artwork.py:35 - Создан Artwork: Изображение: Madonna and Child (ID: 437674)
+2026-05-06 16:34:12 - metetl.images.models - DEBUG - color_artwork.py:32 - Создан ColorArtwork: 437674
+2026-05-06 16:34:12 - metetl.images.models - DEBUG - artwork.py:35 - Создан Artwork: Изображение: 清  趙之謙  牡丹  軸|Peonies (ID: 36162)
+2026-05-06 16:34:12 - metetl.images.models - DEBUG - color_artwork.py:32 - Создан ColorArtwork: 36162
+2026-05-06 16:34:12 - metetl.images.models - DEBUG - artwork.py:35 - Создан Artwork: Изображение: 明   文嘉   為項元汴作山水圖   軸|Landscape dedicated to Xiang Yuanbian (ID: 36135)
+2026-05-06 16:34:12 - metetl.images.models - DEBUG - color_artwork.py:32 - Создан ColorArtwork: 36135
+2026-05-06 16:34:12 - metetl.images.models - DEBUG - artwork.py:35 - Создан Artwork: Изображение: 宮川一笑筆　武士と若衆|Samurai and Wakashu (Male Youth) (ID: 816213)
+2026-05-06 16:34:12 - metetl.images.models - DEBUG - color_artwork.py:32 - Создан ColorArtwork: 816213
+2026-05-06 16:34:12 - metetl.images.models - DEBUG - color_artwork.py:66 - Гамма-коррекция (gamma=0.5): 36135
+
+2026-05-06 16:34:12 - metetl.images.models - DEBUG - color_artwork.py:66 - Гамма-коррекция (gamma=0.5): 36162
+2026-05-06 16:34:12 - metetl.images.models - DEBUG - artwork.py:35 - Создан Artwork: Изображение: Battle Scene (ID: 436890)
+2026-05-06 16:34:12 - metetl.images.models - DEBUG - color_artwork.py:32 - Создан ColorArtwork: 436890
+2026-05-06 16:34:12 - metetl.images.models - DEBUG - color_artwork.py:66 - Гамма-коррекция (gamma=0.5): 436890
+2026-05-06 16:34:12 - metetl.images.parallel_processor - INFO - parallel_processor.py:149 - Обработка завершена, сохранено 5 изображений
+2026-05-06 16:34:12 - metetl.images.parallel_processor - INFO - parallel_processor.py:153 -   1. ID: 36135 -> 1_36135_gamma_correction.png
+2026-05-06 16:34:12 - metetl.images.parallel_processor - INFO - parallel_processor.py:153 -   2. ID: 816213 -> 2_816213_gamma_correction.png
+2026-05-06 16:34:12 - metetl.images.parallel_processor - INFO - parallel_processor.py:153 -   3. ID: 437674 -> 3_437674_gamma_correction.png
+2026-05-06 16:34:12 - metetl.images.parallel_processor - INFO - parallel_processor.py:153 -   4. ID: 36162 -> 4_36162_gamma_correction.png
+2026-05-06 16:34:12 - metetl.images.parallel_processor - INFO - parallel_processor.py:153 -   5. ID: 436890 -> 5_436890_gamma_correction.png
+2026-05-06 16:34:12 - metetl.cli - INFO - cli.py:97 - Результаты обработки:
+2026-05-06 16:34:12 - metetl.cli - INFO - cli.py:99 -   1. ID: 36135 -> 1_36135_gamma_correction.png
+2026-05-06 16:34:12 - metetl.cli - INFO - cli.py:99 -   2. ID: 816213 -> 2_816213_gamma_correction.png
+2026-05-06 16:34:12 - metetl.cli - INFO - cli.py:99 -   3. ID: 437674 -> 3_437674_gamma_correction.png
+2026-05-06 16:34:12 - metetl.cli - INFO - cli.py:99 -   4. ID: 36162 -> 4_36162_gamma_correction.png
+2026-05-06 16:34:12 - metetl.cli - INFO - cli.py:99 -   5. ID: 436890 -> 5_436890_gamma_correction.png
+2026-05-06 16:34:12 - metetl.cli - INFO - cli.py:101 - Всего обработано: 5 изображений
+2026-05-06 16:34:24 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:34:25 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:34:25 - metetl.cli - INFO - cli.py:293 - ============================================================
+2026-05-06 16:34:25 - metetl.cli - INFO - cli.py:294 - Metropolitan Museum of Art ETL Pipeline
+2026-05-06 16:34:25 - metetl.cli - INFO - cli.py:295 - ============================================================
+2026-05-06 16:34:25 - metetl.cli - INFO - cli.py:304 - Выполнение команды: analyze
+2026-05-06 16:34:40 - metetl.cli - INFO - cli.py:139 - Запуск анализа данных из data\MetObjects.csv
+2026-05-06 16:34:40 - metetl.cli - INFO - cli.py:140 - Результаты будут сохранены в: data\plots
+2026-05-06 16:34:40 - metetl.cli - INFO - cli.py:143 - Чтение данных...
+2026-05-06 16:34:40 - metetl.analysis.generators - INFO - generators.py:164 - Начало аккумуляции статистик
+2026-05-06 16:34:40 - metetl.analysis.generators - DEBUG - generators.py:138 - Начало подготовки данных к агрегации
+2026-05-06 16:34:40 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:40 - metetl.analysis.generators - DEBUG - generators.py:34 - Начало чтения файла: data\MetObjects.csv, размер чанка: 10000
+2026-05-06 16:34:40 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 1, строк: 10000
+2026-05-06 16:34:40 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9752 строк (всего отфильтровано: 9752)
+2026-05-06 16:34:40 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 2, строк: 10000
+2026-05-06 16:34:40 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9857 строк (всего отфильтровано: 19609)
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 3, строк: 10000
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9928 строк (всего отфильтровано: 29537)
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 4, строк: 10000
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9422 строк (всего отфильтровано: 38959)
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 5, строк: 10000
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9080 строк (всего отфильтровано: 48039)
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 6, строк: 10000
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9058 строк (всего отфильтровано: 57097)
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 7, строк: 10000
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9667 строк (всего отфильтровано: 66764)
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 8, строк: 10000
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9942 строк (всего отфильтровано: 76706)
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 9, строк: 10000
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9962 строк (всего отфильтровано: 86668)
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 10, строк: 10000
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9999 строк (всего отфильтровано: 96667)
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 11, строк: 10000
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9998 строк (всего отфильтровано: 106665)
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:179 - Обработано записей: 100000
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 12, строк: 10000
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9878 строк (всего отфильтровано: 116543)
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 13, строк: 10000
+2026-05-06 16:34:41 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9998 строк (всего отфильтровано: 126541)
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 14, строк: 10000
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9190 строк (всего отфильтровано: 135731)
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 15, строк: 10000
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 2131 строк (всего отфильтровано: 137862)
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 16, строк: 10000
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 4425 строк (всего отфильтровано: 142287)
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 17, строк: 10000
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9920 строк (всего отфильтровано: 152207)
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 18, строк: 10000
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9967 строк (всего отфильтровано: 162174)
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 19, строк: 10000
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9383 строк (всего отфильтровано: 171557)
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 20, строк: 10000
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 6577 строк (всего отфильтровано: 178134)
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 21, строк: 10000
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 7605 строк (всего отфильтровано: 185739)
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 22, строк: 10000
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9991 строк (всего отфильтровано: 195730)
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 23, строк: 10000
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9961 строк (всего отфильтровано: 205691)
+2026-05-06 16:34:42 - metetl.analysis.generators - DEBUG - generators.py:179 - Обработано записей: 200000
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 24, строк: 10000
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9963 строк (всего отфильтровано: 215654)
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 25, строк: 10000
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9977 строк (всего отфильтровано: 225631)
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 26, строк: 10000
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9748 строк (всего отфильтровано: 235379)
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 27, строк: 10000
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9971 строк (всего отфильтровано: 245350)
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 28, строк: 10000
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9988 строк (всего отфильтровано: 255338)
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 29, строк: 10000
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9988 строк (всего отфильтровано: 265326)
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 30, строк: 10000
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9882 строк (всего отфильтровано: 275208)
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 31, строк: 10000
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9949 строк (всего отфильтровано: 285157)
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 32, строк: 10000
+2026-05-06 16:34:43 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9844 строк (всего отфильтровано: 295001)
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 33, строк: 10000
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9838 строк (всего отфильтровано: 304839)
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:179 - Обработано записей: 300000
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 34, строк: 10000
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9565 строк (всего отфильтровано: 314404)
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 35, строк: 10000
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 448 строк (всего отфильтровано: 314852)
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 36, строк: 10000
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 28 строк (всего отфильтровано: 314880)
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 37, строк: 10000
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 2744 строк (всего отфильтровано: 317624)
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 38, строк: 10000
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9792 строк (всего отфильтровано: 327416)
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 39, строк: 10000
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9564 строк (всего отфильтровано: 336980)
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 40, строк: 10000
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 7530 строк (всего отфильтровано: 344510)
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 41, строк: 10000
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 6904 строк (всего отфильтровано: 351414)
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 42, строк: 10000
+2026-05-06 16:34:44 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 7230 строк (всего отфильтровано: 358644)
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 43, строк: 10000
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 7856 строк (всего отфильтровано: 366500)
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 44, строк: 10000
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 6855 строк (всего отфильтровано: 373355)
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 45, строк: 10000
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 6833 строк (всего отфильтровано: 380188)
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 46, строк: 10000
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9409 строк (всего отфильтровано: 389597)
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 47, строк: 10000
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9842 строк (всего отфильтровано: 399439)
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 48, строк: 10000
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9470 строк (всего отфильтровано: 408909)
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:179 - Обработано записей: 400000
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 49, строк: 4956
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 4956 -> 4645 строк (всего отфильтровано: 413554)
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:57 - Всего прочитано чанков: 49
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 413554
+2026-05-06 16:34:45 - metetl.analysis.generators - DEBUG - generators.py:149 - Подготовлено записей для агрегации: 413554
+2026-05-06 16:34:45 - metetl.analysis.generators - INFO - generators.py:181 - Всего обработано записей: 413554
+2026-05-06 16:34:45 - metetl.analysis.generators - INFO - generators.py:182 - Уникальных культур: 6672
+2026-05-06 16:34:45 - metetl.analysis.generators - INFO - generators.py:215 - Аккумуляция завершена. Сформировано 20016 записей статистик
+2026-05-06 16:34:45 - metetl.cli - INFO - cli.py:149 - Вычисление статистик...
+2026-05-06 16:34:45 - metetl.analysis.analysis - DEBUG - analysis.py:88 - Топ-10 культур по частоте: ['nan', 'American', 'French', 'Japan', 'China', 'Italian', 'Japanese', 'British', 'German', 'Roman']
+2026-05-06 16:34:45 - metetl.cli - INFO - cli.py:155 - Топ-10 культур: nan, American, French, Japan, China, Italian, Japanese, British, German, Roman
+2026-05-06 16:34:45 - metetl.analysis.analysis - WARNING - analysis.py:126 - Пропущена культура: nan (нет в статистиках)
+2026-05-06 16:34:45 - metetl.analysis.analysis - DEBUG - analysis.py:144 - Подготовлены данные для 9 культур
+2026-05-06 16:34:45 - metetl.analysis.plotting - INFO - plotting.py:44 - Построение столбцовой диаграммы: data\plots\bar_chart.png
+2026-05-06 16:34:46 - metetl.analysis.plotting - INFO - plotting.py:112 - Столбцовая диаграмма сохранена: data\plots\bar_chart.png
+2026-05-06 16:34:46 - metetl.analysis.analysis - INFO - analysis.py:184 - Культура с самой длительной историей: American
+2026-05-06 16:34:46 - metetl.cli - INFO - cli.py:170 - Культура с самой длительной историей: American
+2026-05-06 16:34:46 - metetl.analysis.analysis - INFO - analysis.py:208 - Сбор временных данных для культуры: American
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:34 - Начало чтения файла: data\MetObjects.csv, размер чанка: 10000
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 1, строк: 10000
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 6269 строк (всего отфильтровано: 6269)
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 6269 -> 6269 строк (всего отфильтровано: 6269)
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 6269
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 6269
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 2, строк: 10000
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 6691 строк (всего отфильтровано: 6691)
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 6691 -> 6691 строк (всего отфильтровано: 6691)
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 6691
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 6691
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 3, строк: 10000
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 45 строк (всего отфильтровано: 45)
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 45 -> 45 строк (всего отфильтровано: 45)
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 45
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 45
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 4, строк: 10000
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 4 строк (всего отфильтровано: 4)
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 4 -> 4 строк (всего отфильтровано: 4)
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 4
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 4
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 5, строк: 10000
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 6, строк: 10000
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 7, строк: 10000
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 1681 строк (всего отфильтровано: 1681)
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 1681 -> 1681 строк (всего отфильтровано: 1681)
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 1681
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 1681
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 8, строк: 10000
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 3937 строк (всего отфильтровано: 3937)
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 3937 -> 3937 строк (всего отфильтровано: 3937)
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 3937
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 3937
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 9, строк: 10000
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 3949 строк (всего отфильтровано: 3949)
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 3949 -> 3949 строк (всего отфильтровано: 3949)
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 3949
+2026-05-06 16:34:46 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 3949
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 10, строк: 10000
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 4063 строк (всего отфильтровано: 4063)
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 4063 -> 4063 строк (всего отфильтровано: 4063)
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 4063
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 4063
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 11, строк: 10000
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 3 строк (всего отфильтровано: 3)
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 3 -> 3 строк (всего отфильтровано: 3)
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 3
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 3
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 12, строк: 10000
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 15 строк (всего отфильтровано: 15)
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 15 -> 15 строк (всего отфильтровано: 15)
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 15
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 15
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 13, строк: 10000
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 4 строк (всего отфильтровано: 4)
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 4 -> 4 строк (всего отфильтровано: 4)
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 4
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 4
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 14, строк: 10000
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 8 строк (всего отфильтровано: 8)
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 8 -> 8 строк (всего отфильтровано: 8)
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 8
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 8
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 15, строк: 10000
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 16, строк: 10000
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 17, строк: 10000
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 18, строк: 10000
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 19, строк: 10000
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 20, строк: 10000
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:47 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 21, строк: 10000
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 22, строк: 10000
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 23, строк: 10000
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 24, строк: 10000
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 25, строк: 10000
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 26, строк: 10000
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 27, строк: 10000
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 28, строк: 10000
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:48 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 29, строк: 10000
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 30, строк: 10000
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 1 строк (всего отфильтровано: 1)
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 1 -> 1 строк (всего отфильтровано: 1)
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 1
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 1
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 31, строк: 10000
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 32, строк: 10000
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 3 строк (всего отфильтровано: 3)
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 3 -> 3 строк (всего отфильтровано: 3)
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 3
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 3
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 33, строк: 10000
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 9 строк (всего отфильтровано: 9)
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 9 -> 9 строк (всего отфильтровано: 9)
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 9
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 9
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 34, строк: 10000
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 610 строк (всего отфильтровано: 610)
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 610 -> 610 строк (всего отфильтровано: 610)
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 610
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 610
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 35, строк: 10000
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 33 строк (всего отфильтровано: 33)
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 33 -> 33 строк (всего отфильтровано: 33)
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 33
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 33
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 36, строк: 10000
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 0
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 37, строк: 10000
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 6 строк (всего отфильтровано: 6)
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 6 -> 6 строк (всего отфильтровано: 6)
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 6
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 6
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 38, строк: 10000
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 54 строк (всего отфильтровано: 54)
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 54 -> 54 строк (всего отфильтровано: 54)
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 54
+2026-05-06 16:34:49 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 54
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 39, строк: 10000
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 21 строк (всего отфильтровано: 21)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 21 -> 21 строк (всего отфильтровано: 21)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 21
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 21
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 40, строк: 10000
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 107 строк (всего отфильтровано: 107)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 107 -> 107 строк (всего отфильтровано: 107)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 107
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 107
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 41, строк: 10000
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 55 строк (всего отфильтровано: 55)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 55 -> 55 строк (всего отфильтровано: 55)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 55
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 55
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 42, строк: 10000
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 192 строк (всего отфильтровано: 192)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 192 -> 192 строк (всего отфильтровано: 192)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 192
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 192
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 43, строк: 10000
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 30 строк (всего отфильтровано: 30)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 30 -> 30 строк (всего отфильтровано: 30)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 30
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 30
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 44, строк: 10000
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 64 строк (всего отфильтровано: 64)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 64 -> 64 строк (всего отфильтровано: 64)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 64
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 64
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 45, строк: 10000
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 77 строк (всего отфильтровано: 77)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 77 -> 77 строк (всего отфильтровано: 77)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 77
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 77
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 46, строк: 10000
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 46 строк (всего отфильтровано: 46)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 46 -> 46 строк (всего отфильтровано: 46)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 46
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 46
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 47, строк: 10000
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 160 строк (всего отфильтровано: 160)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 160 -> 160 строк (всего отфильтровано: 160)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 160
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 160
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 48, строк: 10000
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 10000 -> 227 строк (всего отфильтровано: 227)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 227 -> 227 строк (всего отфильтровано: 227)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 227
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 227
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:54 - Прочитан чанк 49, строк: 4956
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 4956 -> 47 строк (всего отфильтровано: 47)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:82 - Начало фильтрации данных
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:117 - Отфильтровано: 47 -> 47 строк (всего отфильтровано: 47)
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 47
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:123 - Фильтрация завершена. Всего отфильтровано строк: 47
+2026-05-06 16:34:50 - metetl.analysis.generators - DEBUG - generators.py:57 - Всего прочитано чанков: 49
+2026-05-06 16:34:50 - metetl.analysis.analysis - INFO - analysis.py:233 - Собрано 149 точек данных для культуры American
+2026-05-06 16:34:50 - metetl.analysis.plotting - INFO - plotting.py:135 - Построение временного графика для культуры American: data\plots\time_series_American.png
+2026-05-06 16:34:51 - metetl.analysis.plotting - INFO - plotting.py:172 - Временной график сохранен: data\plots\time_series_American.png
+2026-05-06 16:34:51 - metetl.cli - INFO - cli.py:188 - Анализ завершен
+2026-05-06 16:34:51 - metetl.cli - INFO - cli.py:189 - Графики сохранены в: data\plots
+2026-05-06 16:43:13 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:43:13 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:43:13 - metetl.cli - INFO - cli.py:293 - ============================================================
+2026-05-06 16:43:13 - metetl.cli - INFO - cli.py:294 - Metropolitan Museum of Art ETL Pipeline
+2026-05-06 16:43:13 - metetl.cli - INFO - cli.py:295 - ============================================================
+2026-05-06 16:43:13 - metetl.cli - INFO - cli.py:301 - Выполнение команды: process
+2026-05-06 16:43:14 - metetl.cli - INFO - cli.py:80 - Запуск загрузки 5 изображений
+2026-05-06 16:43:14 - metetl.cli - INFO - cli.py:81 - Результаты будут сохранены в: images
+2026-05-06 16:43:14 - metetl.images.async_downloader - INFO - async_downloader.py:43 - AsyncImageDownloader инициализирован. CSV: data\MetObjects.csv, output: images, max_attempts: 10
+2026-05-06 16:43:14 - metetl.images.async_downloader - INFO - async_downloader.py:246 - Начинается загрузка 5 изображений
+2026-05-06 16:43:14 - metetl.images.async_downloader - DEBUG - async_downloader.py:53 - Чтение списка картин из CSV: data\MetObjects.csv
+2026-05-06 16:43:21 - metetl.images.async_downloader - INFO - async_downloader.py:66 - Найдено 9005 картин в CSV
+2026-05-06 16:43:21 - metetl.images.async_downloader - INFO - async_downloader.py:257 - Загрузка 5 изображений из 9005 доступных (максимум попыток на каждое: 10)
+2026-05-06 16:43:21 - metetl.images.async_downloader - INFO - async_downloader.py:147 - Загрузка изображения 1 началась (ID: 35971), попытка 1/10
+2026-05-06 16:43:21 - metetl.images.async_downloader - DEBUG - async_downloader.py:83 - Запрос к API для 35971, попытка 1/3
+2026-05-06 16:43:21 - metetl.images.async_downloader - INFO - async_downloader.py:147 - Загрузка изображения 2 началась (ID: 486744), попытка 1/10
+2026-05-06 16:43:21 - metetl.images.async_downloader - DEBUG - async_downloader.py:83 - Запрос к API для 486744, попытка 1/3
+2026-05-06 16:43:21 - metetl.images.async_downloader - INFO - async_downloader.py:147 - Загрузка изображения 3 началась (ID: 73661), попытка 1/10
+2026-05-06 16:43:21 - metetl.images.async_downloader - DEBUG - async_downloader.py:83 - Запрос к API для 73661, попытка 1/3
+2026-05-06 16:43:21 - metetl.images.async_downloader - INFO - async_downloader.py:147 - Загрузка изображения 4 началась (ID: 57176), попытка 1/10
+2026-05-06 16:43:21 - metetl.images.async_downloader - DEBUG - async_downloader.py:83 - Запрос к API для 57176, попытка 1/3
+2026-05-06 16:43:21 - metetl.images.async_downloader - INFO - async_downloader.py:147 - Загрузка изображения 5 началась (ID: 61712), попытка 1/10
+2026-05-06 16:43:21 - metetl.images.async_downloader - DEBUG - async_downloader.py:83 - Запрос к API для 61712, попытка 1/3
+2026-05-06 16:43:22 - metetl.images.async_downloader - DEBUG - async_downloader.py:87 - Успешный ответ API для 61712
+2026-05-06 16:43:22 - metetl.images.async_downloader - DEBUG - async_downloader.py:87 - Успешный ответ API для 73661
+2026-05-06 16:43:22 - metetl.images.async_downloader - WARNING - async_downloader.py:163 - Попытка 1 для изображения 3 провалена: нет URL изображения для ID 73661
+2026-05-06 16:43:22 - metetl.images.async_downloader - INFO - async_downloader.py:147 - Загрузка изображения 3 началась (ID: 440900), попытка 2/10
+2026-05-06 16:43:22 - metetl.images.async_downloader - DEBUG - async_downloader.py:83 - Запрос к API для 440900, попытка 1/3
+2026-05-06 16:43:22 - metetl.images.async_downloader - DEBUG - async_downloader.py:87 - Успешный ответ API для 57176
+2026-05-06 16:43:22 - metetl.images.async_downloader - DEBUG - async_downloader.py:87 - Успешный ответ API для 486744
+2026-05-06 16:43:22 - metetl.images.async_downloader - WARNING - async_downloader.py:163 - Попытка 1 для изображения 2 провалена: нет URL изображения для ID 486744
+2026-05-06 16:43:22 - metetl.images.async_downloader - INFO - async_downloader.py:147 - Загрузка изображения 2 началась (ID: 73048), попытка 2/10
+2026-05-06 16:43:22 - metetl.images.async_downloader - DEBUG - async_downloader.py:83 - Запрос к API для 73048, попытка 1/3
+2026-05-06 16:43:22 - metetl.images.async_downloader - DEBUG - async_downloader.py:87 - Успешный ответ API для 440900
+2026-05-06 16:43:22 - metetl.images.async_downloader - DEBUG - async_downloader.py:87 - Успешный ответ API для 73048
+2026-05-06 16:43:22 - metetl.images.async_downloader - WARNING - async_downloader.py:163 - Попытка 2 для изображения 2 провалена: нет URL изображения для ID 73048
+2026-05-06 16:43:22 - metetl.images.async_downloader - INFO - async_downloader.py:147 - Загрузка изображения 2 началась (ID: 459076), попытка 3/10
+2026-05-06 16:43:22 - metetl.images.async_downloader - DEBUG - async_downloader.py:83 - Запрос к API для 459076, попытка 1/3
+2026-05-06 16:43:22 - metetl.images.async_downloader - DEBUG - async_downloader.py:87 - Успешный ответ API для 35971
+2026-05-06 16:43:23 - metetl.images.async_downloader - DEBUG - async_downloader.py:87 - Успешный ответ API для 459076
+2026-05-06 16:43:24 - metetl.images.async_downloader - DEBUG - async_downloader.py:174 - Изображение 4 скачано: 87233 байт
+2026-05-06 16:43:24 - metetl.images.async_downloader - DEBUG - async_downloader.py:174 - Изображение 1 скачано: 84739 байт
+2026-05-06 16:43:24 - metetl.images.async_downloader - DEBUG - async_downloader.py:196 - Оригинал сохранен: images\4_57176_original.png
+2026-05-06 16:43:24 - metetl.images.async_downloader - INFO - async_downloader.py:221 - Загрузка изображения 4 завершена (ID: 57176) после 1 попыток
+2026-05-06 16:43:24 - metetl.images.async_downloader - DEBUG - async_downloader.py:174 - Изображение 3 скачано: 74306 байт
+2026-05-06 16:43:24 - metetl.images.async_downloader - DEBUG - async_downloader.py:196 - Оригинал сохранен: images\1_35971_original.png
+2026-05-06 16:43:24 - metetl.images.async_downloader - INFO - async_downloader.py:221 - Загрузка изображения 1 завершена (ID: 35971) после 1 попыток
+2026-05-06 16:43:24 - metetl.images.async_downloader - DEBUG - async_downloader.py:196 - Оригинал сохранен: images\3_440900_original.png
+2026-05-06 16:43:24 - metetl.images.async_downloader - INFO - async_downloader.py:221 - Загрузка изображения 3 завершена (ID: 440900) после 2 попыток
+2026-05-06 16:43:24 - metetl.images.async_downloader - DEBUG - async_downloader.py:174 - Изображение 5 скачано: 259988 байт
+2026-05-06 16:43:24 - metetl.images.async_downloader - DEBUG - async_downloader.py:196 - Оригинал сохранен: images\5_61712_original.png
+2026-05-06 16:43:24 - metetl.images.async_downloader - INFO - async_downloader.py:221 - Загрузка изображения 5 завершена (ID: 61712) после 1 попыток
+2026-05-06 16:43:24 - metetl.images.async_downloader - DEBUG - async_downloader.py:174 - Изображение 2 скачано: 349391 байт
+2026-05-06 16:43:24 - metetl.images.async_downloader - DEBUG - async_downloader.py:196 - Оригинал сохранен: images\2_459076_original.png
+2026-05-06 16:43:24 - metetl.images.async_downloader - INFO - async_downloader.py:221 - Загрузка изображения 2 завершена (ID: 459076) после 3 попыток
+2026-05-06 16:43:24 - metetl.images.async_downloader - INFO - async_downloader.py:274 - Успешно загружено 5 из 5 изображений
+2026-05-06 16:43:24 - metetl.cli - INFO - cli.py:91 - Загружено изображений: 5
+2026-05-06 16:43:24 - metetl.images.parallel_processor - INFO - parallel_processor.py:35 - ParallelImageProcessor инициализирован. Output: images, workers: 4
+2026-05-06 16:43:24 - metetl.images.parallel_processor - INFO - parallel_processor.py:120 - Начинается параллельная обработка 5 изображений
+2026-05-06 16:43:24 - metetl.images.parallel_processor - INFO - parallel_processor.py:121 - Используемый метод обработки: gamma_correction
+2026-05-06 16:43:24 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:43:24 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:43:24 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:43:24 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-06 16:43:25 - metetl.images.models - DEBUG - artwork.py:35 - Создан Artwork: Изображение: Adoration of the Magi (ID: 459076)
+2026-05-06 16:43:25 - metetl.images.models - DEBUG - color_artwork.py:32 - Создан ColorArtwork: 459076
+2026-05-06 16:43:25 - metetl.images.models - DEBUG - color_artwork.py:66 - Гамма-коррекция (gamma=0.5): 459076
+2026-05-06 16:43:25 - metetl.images.models - DEBUG - artwork.py:35 - Создан Artwork: Изображение: 清   佚名   倣王翬   倣李成山水圖   軸|Landscape after Li Cheng (ID: 35971)
+2026-05-06 16:43:25 - metetl.images.models - DEBUG - color_artwork.py:32 - Создан ColorArtwork: 35971
+2026-05-06 16:43:25 - metetl.images.models - DEBUG - color_artwork.py:66 - Гамма-коррекция (gamma=0.5): 35971
+2026-05-06 16:43:25 - metetl.images.models - DEBUG - artwork.py:35 - Создан Artwork: Изображение: Saint Dominic in Penitence (ID: 440900)
+2026-05-06 16:43:25 - metetl.images.models - DEBUG - color_artwork.py:32 - Создан ColorArtwork: 440900
+2026-05-06 16:43:25 - metetl.images.models - DEBUG - color_artwork.py:66 - Гамма-коррекция (gamma=0.5): 440900
+2026-05-06 16:43:25 - metetl.images.models - DEBUG - artwork.py:35 - Создан Artwork: Изображение:  (ID: 57176)
+2026-05-06 16:43:25 - metetl.images.models - DEBUG - color_artwork.py:32 - Создан ColorArtwork: 57176
+2026-05-06 16:43:25 - metetl.images.models - DEBUG - color_artwork.py:66 - Гамма-коррекция (gamma=0.5): 57176
+2026-05-06 16:43:25 - metetl.images.models - DEBUG - artwork.py:35 - Создан Artwork: Изображение:  (ID: 61712)
+2026-05-06 16:43:25 - metetl.images.models - DEBUG - color_artwork.py:32 - Создан ColorArtwork: 61712
+2026-05-06 16:43:25 - metetl.images.models - DEBUG - color_artwork.py:66 - Гамма-коррекция (gamma=0.5): 61712
+2026-05-06 16:43:25 - metetl.images.parallel_processor - INFO - parallel_processor.py:149 - Обработка завершена, сохранено 5 изображений
+2026-05-06 16:43:25 - metetl.images.parallel_processor - INFO - parallel_processor.py:153 -   1. ID: 35971 -> 1_35971_gamma_correction.png
+2026-05-06 16:43:25 - metetl.images.parallel_processor - INFO - parallel_processor.py:153 -   2. ID: 459076 -> 2_459076_gamma_correction.png
+2026-05-06 16:43:25 - metetl.images.parallel_processor - INFO - parallel_processor.py:153 -   3. ID: 440900 -> 3_440900_gamma_correction.png
+2026-05-06 16:43:25 - metetl.images.parallel_processor - INFO - parallel_processor.py:153 -   4. ID: 57176 -> 4_57176_gamma_correction.png
+2026-05-06 16:43:25 - metetl.images.parallel_processor - INFO - parallel_processor.py:153 -   5. ID: 61712 -> 5_61712_gamma_correction.png
+2026-05-06 16:43:25 - metetl.cli - INFO - cli.py:97 - Результаты обработки:
+2026-05-06 16:43:25 - metetl.cli - INFO - cli.py:99 -   1. ID: 35971 -> 1_35971_gamma_correction.png
+2026-05-06 16:43:25 - metetl.cli - INFO - cli.py:99 -   2. ID: 459076 -> 2_459076_gamma_correction.png
+2026-05-06 16:43:25 - metetl.cli - INFO - cli.py:99 -   3. ID: 440900 -> 3_440900_gamma_correction.png
+2026-05-06 16:43:25 - metetl.cli - INFO - cli.py:99 -   4. ID: 57176 -> 4_57176_gamma_correction.png
+2026-05-06 16:43:25 - metetl.cli - INFO - cli.py:99 -   5. ID: 61712 -> 5_61712_gamma_correction.png
+2026-05-06 16:43:25 - metetl.cli - INFO - cli.py:101 - Всего обработано: 5 изображений
+2026-05-17 13:31:58 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-17 13:31:58 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-17 13:31:58 - metetl.cli - INFO - cli.py:293 - ============================================================
+2026-05-17 13:31:58 - metetl.cli - INFO - cli.py:294 - Metropolitan Museum of Art ETL Pipeline
+2026-05-17 13:31:58 - metetl.cli - INFO - cli.py:295 - ============================================================
+2026-05-17 13:31:58 - metetl.cli - INFO - cli.py:298 - Выполнение команды: prepare
+2026-05-17 13:31:58 - metetl.cli - ERROR - cli.py:30 - CSV файл не найден: data\MetObjects.csv
+2026-05-17 13:32:49 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-17 13:32:49 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-17 13:32:49 - metetl.cli - INFO - cli.py:293 - ============================================================
+2026-05-17 13:32:49 - metetl.cli - INFO - cli.py:294 - Metropolitan Museum of Art ETL Pipeline
+2026-05-17 13:32:49 - metetl.cli - INFO - cli.py:295 - ============================================================
+2026-05-17 13:32:49 - metetl.cli - INFO - cli.py:298 - Выполнение команды: prepare
+2026-05-17 13:32:49 - metetl.cli - ERROR - cli.py:30 - CSV файл не найден: data\MetObjects.csv
+2026-05-17 13:34:26 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-17 13:34:26 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-17 13:34:26 - metetl.cli - INFO - cli.py:293 - ============================================================
+2026-05-17 13:34:26 - metetl.cli - INFO - cli.py:294 - Metropolitan Museum of Art ETL Pipeline
+2026-05-17 13:34:26 - metetl.cli - INFO - cli.py:295 - ============================================================
+2026-05-17 13:34:26 - metetl.cli - INFO - cli.py:298 - Выполнение команды: prepare
+2026-05-17 13:34:26 - metetl.cli - ERROR - cli.py:30 - CSV файл не найден: data\MetObjects.csv
+2026-05-17 13:34:30 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-17 13:34:31 - metetl - DEBUG - logging_config.py:67 - Логирование настроено. Файл: logs\metetl.log, уровень консоли: 20, уровень файла: 10
+2026-05-17 13:34:31 - metetl.cli - INFO - cli.py:293 - ============================================================
+2026-05-17 13:34:31 - metetl.cli - INFO - cli.py:294 - Metropolitan Museum of Art ETL Pipeline
+2026-05-17 13:34:31 - metetl.cli - INFO - cli.py:295 - ============================================================
+2026-05-17 13:34:31 - metetl.cli - INFO - cli.py:301 - Выполнение команды: process
+2026-05-17 13:34:33 - metetl.cli - ERROR - cli.py:71 - JSON файл не найден: data\to_download.json
